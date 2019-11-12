@@ -20,7 +20,7 @@ class SecondFragment : Fragment(){
 
 
         return inflater.inflate(R.layout.fragment_second,container,false)
-       }
+
 
     }
 }
