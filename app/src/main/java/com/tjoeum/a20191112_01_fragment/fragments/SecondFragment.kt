@@ -16,11 +16,16 @@ class SecondFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-
-
         return inflater.inflate(R.layout.fragment_second,container,false)
 
 
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        secondFragTxt.setOnClickListener {
+            Toast.makeText(context,"두번째 프레그먼트",Toast.LENGTH_SHORT).show()
+        }
     }
 }

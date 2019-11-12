@@ -6,6 +6,6 @@ abstract class BaseActivity : AppCompatActivity(){
 
     abstract fun setValues()
 
-    abstract fun setEvents()
+    abstract fun setupEvents()
 
 }

@@ -12,16 +12,19 @@
         android:id="@+id/firstFrag"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        class="com.tjoeum.a20191112_01_fragment.fragments.FirstFragment"/>
+        class="com.tjoeum.a20191112_01_fragment.fragments.FirstFragment"
+        tools:layout="@layout/fragment_first" />
 <!-- 배경 검정, 글씨 흰색인 SecondFragment-->
     <fragment
         android:id="@+id/secondFrag"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        class="com.tjoeum.a20191112_01_fragment.fragments.SecondFragment"/>
+        class="com.tjoeum.a20191112_01_fragment.fragments.SecondFragment"
+        tools:layout="@layout/fragment_second" />
 
-
+    
     <LinearLayout
+        android:id="@+id/testViewPage"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:gravity="center"

@@ -1,5 +1,6 @@
 package com.tjoeum.a20191112_01_fragment
 
+import android.content.Intent
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -10,7 +11,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         setValues()
-        setEvents()
+        setupEvents()
     }
 
     override fun setValues() {
@@ -20,6 +21,10 @@ class MainActivity : BaseActivity() {
         
     }
 
-    override fun setEvents() {
+    override fun setupEvents() {
+        testViewPage.setOnClickListener {
+            intent = Intent(this,TestActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
